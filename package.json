@@ -1,0 +1,14 @@
+{
+  "name": "wire-management-system",
+  "version": "1.0.0",
+  "description": "Full MERN Application for Railpower & Railwire Wires and Cables",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js",
+    "dev:server": "node --watch server/server.js",
+    "dev:client": "npm run dev --prefix client",
+    "seed": "node server/seed/seedData.js"
+  }
+}
